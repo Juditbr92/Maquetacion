@@ -1,0 +1,106 @@
+p{
+    font-size: 20px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    border: 5px solid rgba(100, 219, 68, 0.886);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+nav{
+    width: 100%;
+    height: 45px;
+    border: 5px solid rgb(240, 155, 169);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row; 
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    height: 450px;
+    border: 5px solid rgba(94, 167, 231, 0.774);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.headerIzq{
+    width: 99%;
+    height: 60px;
+    border: 5px solid rgba(100, 219, 68, 0.886);
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.otroIzq{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section{
+    width: 99%;
+    height: 60px;
+    border: 5px solid rgba(214, 89, 236, 0.886);
+    margin: 3px;
+    font-size: 30px;
+}
+
+.footerIzq{
+    width: 99%;
+    height: 40px;
+    border: 5px solid rgb(241, 241, 113);
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.derecha{
+    width: 20%;
+    height: 450px;
+    border: 5px solid rgb(218, 184, 75);
+    border-radius: 10px;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.cuadro1{
+    border: 5px solid rgb(63, 232, 232);
+    height: 200px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.cuadro2{
+    border: 5px solid rgb(63, 232, 232);
+    height: 170px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    border: 5px solid rgb(241, 241, 113);
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 20px;
+}
