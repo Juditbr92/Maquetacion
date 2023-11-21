@@ -67,29 +67,8 @@ body, html{
     margin-right: 100px;
 }
 
-.writtenContent{
-    margin-left: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .paragraph{
     margin-top: 10px;
-}
-
-.padreblog{
-    display: flex;
-    flex-direction: column;
-}
-
-.writtenContentBlog{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    display: flex;
-    justify-content: center;
 }
 
 .padreImagen{
@@ -130,4 +109,32 @@ body, html{
     height: 310px;
     width: 1440px;
     margin-top: 0;
+}
+
+.padreBlog{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.tituloBlog{
+    margin-top:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+.fotoYTexto{
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraphBlog{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.paragraphBlog{
+    margin-top: 75px;
+    margin-right: 30px;
 }
