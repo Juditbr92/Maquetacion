@@ -1,0 +1,180 @@
+body, html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerPadre{
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 99, 190);
+}
+
+.headerHijo2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    color: white;
+    align-items: center;
+}
+
+.phone{
+    display: flex;
+    margin-right: 50px;
+    color: white;
+    align-items: center;
+}
+
+h4{
+    margin-right: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 30px;
+}
+
+.characteristics{
+    width: 60%;
+}
+
+.definition{
+    width: 80%;
+    margin: 30px;
+    color:rgb(0, 99, 190);
+}
+
+.imageDef{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+p, h3{
+    color:black;
+}
+
+.offers{
+    width: 60%;
+    display: column;
+    color:rgb(0, 99, 190);
+    margin-right: 20px;
+}
+
+.offer1{
+    width: 100%;
+    height: 100%;
+}
+
+.imageOffer1{
+    width: 100%;
+    height: 100%;
+}
+
+.offer2{
+    width: 100%;
+    height: 100%;
+}
+
+.imageOffer2{
+    width: 100%;
+    height: 100%;
+}
+
+.places{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 99, 190);
+    margin-left: 20px;
+}
+
+.winter{
+    width: 100%;
+    height: 100%;
+}
+
+.imageWinter{
+    width: 100%;
+    height: 100%;
+}
+
+.beach{
+    width: 100%;
+    height: 100%;
+}
+
+.imageBeach{
+    width: 100%;
+    height: 100%;
+}
+
+.formularios{
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(0, 99, 190);
+    color: white;
+}
+
+.formBoxes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    border: 5px solid rgb(0, 99, 190);
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#buttonInfo{
+    background-color: rgb(0, 99, 190);
+    color: white;
+    height: 30px;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+}
+
+#buttonFilter{
+    background-color: rgb(0, 99, 190);
+    color: white;
+    height: 30px;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+}
+
