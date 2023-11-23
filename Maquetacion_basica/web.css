@@ -31,6 +31,10 @@ body, html{
     height: 520px;
 }
 
+.writtenContent{
+    margin: 80px, 50px;
+}
+
 .container{
     display: flex;
     justify-content: center;
