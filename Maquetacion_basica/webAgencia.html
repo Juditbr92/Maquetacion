@@ -35,8 +35,8 @@
                 <input type="text" id="name"> 
             <label for="origin">Origen</label>
                 <input type="text" id="origin">
-            <label for="destiny">Destino</label>
-                <input type="text" id="destiny">
+            <label for="destination">Destino</label>
+                <input type="text" id="destination">
             <label for="number">Numero de Personas</label>
                 <select type="number" id="number">
                     <option value="1">1</option>
@@ -50,8 +50,13 @@
                 <input type="date" id="date">
         </div>
         <div class="buttons">
-            <button type="button" id="buttonInfo">Solicitar información</button>
-            <button type="button" id="buttonFilter">Filtrar</button>
+            <button type="button" id="buttonInfo" onclick="saveInfo()">Solicitar información</button>
+            <button type="button" id="buttonFilter" onclick="filterDestination()">Filtrar</button>
+            <div id="results">
+                <ul id="travelList">
+                    
+                </ul> 
+            </div>
         </div>
         
     </div>
@@ -94,5 +99,6 @@
                 </div>
         </div>
     </section>
+    <script src="./webAgencia.js"></script>
 </body>
 </html>

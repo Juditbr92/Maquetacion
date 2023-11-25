@@ -178,3 +178,11 @@ p, h3{
     margin: 10px;
 }
 
+#buttonResultado{
+    background-color: rgb(0, 99, 190);
+    color: white;
+    height: 30px;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+}
