@@ -29,7 +29,7 @@ function filterDestination(){
         const destination3 = travelDestination === "galicia";
         return destination1 || destination2 || destination3;
     })
-    // en el ejercicio 4, para que se muestre por pantalla, necesito cambiar el return a console.log
+    // para el ejercicio 4, para que se me muestre por pantalla. Tengo que cambiar el return por console.log
     return filteredList.forEach (travel => {
         const travelElement = document.createElement("li");
         travelElement.innerText = `Nombre: ${travel.nombre}, Origen: ${travel.origen}, Destino: ${travel.destino}, Número de personas: ${travel.numeroPersonas}, Fecha: ${travel.fecha}`;
