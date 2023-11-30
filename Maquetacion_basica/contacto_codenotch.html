@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./codenotch.css">
+    <title>CodeNotch</title>
+</head>
+<body>
+    <header class="header">
+        <a class ="logoEnlace" href = "./codenotch.html">
+            <img class="logo" src="./Fotos/codenotch/codenotch logo.png">
+        </a>  
+        <nav class="menu">
+            <a class="menuEnlaces" href="./contacto_codenotch.html" >Conviérte en Top Notch Coder</a>
+            <a class="menuEnlaces" href = "./cursos_codenotch.html"> Nuestros cursos</a>
+            <a class="menuEnlaces" href = "./equipo_codenotch.html">Conoce nuestro equipo</a>
+        </nav>
+    </header>
+    <div class="formulario">
+        <img class="logoFormulario" src="./Fotos/codenotch/logo_fondo.jpeg">
+        <div class="formIzq">
+
+            <h2 class="formularioTitulo">Ponte en contacto con nosotros</h2>
+                <form class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+
+                    <label for="tlf">Teléfono:</label>
+                    <input type="number" id="tlf" name="tlf" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">¿Cómo nos conociste?:</label>
+                    <select type="opcion">
+                        <option value = "Redes_sociales">Redes sociales</option>
+                        <option value = "Recomendacion">Antiguo alumno</option>
+                        <option value = "Otro"> Otro</option>
+                    </select>
+
+                    <label for="modalidad">¿En qué modalidad estás interesado?</label>
+                    <select type ="opcion">
+                        <option value = "Full-time_Madrid">Desarrollo Web Full Stack full-time presencial</option>
+                        <option value = "Full-time_Online">Desarrollo Web Full Stack full-time online</option>
+                        <option value = "Part-time">Desarrollo Web Full Stack part-time</option>
+                        <option value = "Data_Analisis">Data Analisis</option>
+                    </select>
+
+                    <input class = "submit" type="submit" value="Enviar">
+                </form>
+            </div>
+    </div>
+    
+</body>
+</html>
