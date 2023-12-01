@@ -172,66 +172,61 @@ h3{
     color: white
 }
 
-#division{
+.contenedorEquipo{
     display: flex;
-    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
 }
 
 .profesoresContenedor{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    border: 4px solid red;
     height: 100%;
-    border: 5px solid rgb(23, 161, 202);
-}
-
-.profesorTodo{
-    border: 5px solid greenyellow;
-    display: flex;
-    flex-direction: row;
-    justify-items: space-between;
-    align-content: center;
     width: 100%;
-    height: 100%;
 }
 
-.prof{
-    border: 5px solid black;
+h2{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 800px;
-    width: 800px;
-}
-
-.infoProfesor{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:#0000ff;
+}
+
+.profesores{
+    border: 4px solid greenyellow;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.profesorTipo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    background-color:#0000ff;
+}
+
+.profesorFoto{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 h4{
-    margin: 10px;
-}
-
-.description{
-    border: 5px solid blueviolet;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
 }
 
-.fotoProfesor{
-    height: 300px;
-    width: 300px;
-    margin: 30px;
-}
-
-
-.profesores{
-    display: flex;
-    border: 5px solid gray;
+p{
+    color: white;
+    margin: 0 20px;
 }
