@@ -1,0 +1,276 @@
+head, body{
+    margin: 0;
+    font-family: Poppins, "Arial Black", Gadget, sans-serif;
+}
+
+.header{
+    border: 5px solid black;
+    display: column;
+    background-color: black;
+    margin:0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.menuEnlaces{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.containerLanding{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: #0000ff;
+    margin: 0px;
+}
+
+.imagenLanding{
+    width: 80vh;
+    height: 80%;
+    display: flex;
+    border-radius: 25px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.sloganTodo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-content: flex-start; 
+    margin-left: 50px;
+}
+
+.slogan{
+    display: flex;
+    top: 15%;
+    left: 20%;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+
+.slogan2{
+    display: flex;
+    top: 15%;
+    left: 20%;
+    align-items: center;
+    color: #11f294;
+    font-size: 70px;
+    margin-right: 20px;
+}
+
+.miniSlogan{
+    color: white;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background-color:white;
+}
+
+.logoFormulario{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formIzq{
+    background-color:  #0000ff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.formularioTitulo{
+    width: 200px;
+    display: flex;
+    align-self: center;
+    font-size: 25px;
+    align-self: center;
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    color: #11f294;;
+    margin: 10px;
+}
+
+.submit{
+    margin: 10px
+}
+
+.containerCursos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCursos{
+    color: #0000ff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center
+}
+
+.cursos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.curso1, .curso3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.imagenCurso{
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.tituloCurso{
+    color: #11f294;
+    display: flex;
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+.h3Container{
+    background-color: #0000ff;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+h3{
+    color: white
+}
+
+.contenedorEquipo{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.profesoresContenedor{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0000ff;
+}
+
+.profesores{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.profesorTipo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    background-color:#0000ff;
+}
+
+.profesorFoto{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.pProfesores{
+    color: white;
+    margin: 20px;
+}
+
+.marketingContenedor{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.marketing{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.marketingTipo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    background-color:#11f294;
+}
+
+.marketingFoto{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-content: flex-start;
+    border-radius: 50%;
+}
+
+.marketingLetra{
+    color:#11f294;
+    background-color: black;
+    margin: 0px;
+}
+
+.pMarketing{
+    color: black;
+    margin: 0 20px;
+}

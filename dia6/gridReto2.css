@@ -1,0 +1,46 @@
+* {
+    display: block;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.child {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.a{
+    background-color: greenyellow;
+    color: black;
+}
+
+.b{
+    background-color: black;
+    color: white;
+}
+
+.c{
+    background-color: greenyellow;
+    color: black;
+}
+
+.d{
+    background-color: black;
+    color: white;
+}
+
+.e{
+    background-color: greenyellow;
+    color: black;
+}
+
+.f{
+    background-color: black;
+    color: white;
+}

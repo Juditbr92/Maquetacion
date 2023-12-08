@@ -1,0 +1,41 @@
+* {
+    display: block;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 500px 200px 500px;
+    grid-template-rows: 300px 300px;
+}
+
+.child {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.a{
+    background-color: greenyellow;
+}
+
+.b{
+    background-color: rgb(243, 197, 111);
+}
+
+.c{
+    background-color: orange;
+}
+
+.d{
+    background-color: red;
+}
+
+.e{
+    background-color: blue;
+}
+
+.f{
+    background-color: rgb(237, 237, 111);
+}

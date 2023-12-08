@@ -1,0 +1,134 @@
+* {
+    display: block;
+    margin: 0;
+}
+
+.child {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Medidas fijas */
+/* .container {
+    display: grid;
+    Para las columnas se especifica el ancho
+    grid-template-columns: 100px 200px;
+    Para las filas se especifica la altura
+    grid-template-rows: 50px 200px;
+} */
+
+/* Fracción restante */
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+} */
+
+/* .a {
+    background-color: red;
+}
+
+.b {
+    background-color: blue;
+}
+
+.c {
+    background-color: green;
+}
+
+.d {
+    background-color: orange;
+}
+
+.e {
+    background-color: pink;
+}
+
+.f {
+    background-color: purple;
+}
+
+.g {
+    background-color: aqua;
+}
+
+.h {
+    background-color: cornflowerblue;
+} */
+
+
+
+/* Líneas nombradas */
+/* .container {
+    display: grid;
+    grid-template-columns: [left0] 1fr [left1] 1fr [left2] 1fr [left3] 1fr [middle0] 1fr [middle1] 1fr [middle2] 1fr [middle3] 1fr [middle4] 1fr [right0] 1fr [right1] 1fr [right2] 1fr [right3];
+    grid-template-rows: [top0] 1fr [middle1] 1fr [middle2] 1fr [bottom0];
+}
+
+.a {
+    background-color: red;
+    grid-column: left0/middle0;
+}
+
+.b {
+    background-color: blue;
+    grid-column: middle0/middle3;
+}
+
+.c {
+    background-color: green;
+    grid-column: right0/right1;
+    grid-row: top0/middle2;
+    
+}
+
+.d {
+    background-color: orange;
+    grid-column: left0/middle0;
+}
+
+.e {
+    background-color: pink;
+}
+
+.f {
+    background-color: purple;
+}
+
+.g {
+    background-color: aqua;
+}
+
+.h {
+    background-color: cornflowerblue;
+} */
+
+
+/* Areas */
+.container {
+    display: grid;
+    grid-template-areas: "row1left row1mid row1right" "row2left row2mid row2right" "row3left row3mid row3right";
+}
+
+.a {
+    background-color: red;
+    grid-area: row1left;
+}
+
+.b {
+    background-color: blue;
+    grid-area: row2left;
+}
+
+.c {
+    background-color: green;
+    grid-area: row3left;
+    
+}
+
+.d {
+    background-color: orange;
+    grid-area: row3mid;
+}
