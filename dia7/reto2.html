@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./reto2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body onload="createCards()">
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -37,116 +37,36 @@
             </ul>
         </div>
         </div>
-<!--Creación del modal-->
-        <button type="button" id="buttonCarrito" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cartUpdate()"> Carrito </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content text-dark bg-white">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al carrito</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                    <div class="modal-body">
-<!--Aquí va la lista de elementos añadidos. Empieza vacía-->
-                        <ul id="cartList"></ul> 
-                    </div>
-                    <div class="modal-footer">
-<!--Aquí pongo la suma total de los elementos de la lista actualizada-->
-                        <h5 id="sumaCompra" class="text-start $pink"> </h5>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Comprar</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
+    <button type="button" id="buttonCarrito" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cartUpdate()"> Carrito </button>
     </nav>
-<!--Container con todas las cards-->
+
     <div class="container">
         <div class="row" id="clothesContainer">
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/Pantalones-De-traje-gris-claro-para-Mujer-Pantalones-finos-De-pierna-ancha-Pantalones-sueltos-informales-Verano (1).webp" class="cardImage">
-                <div class="card-body" id="producto1">
-                    <h5 class="card-title" id="clothesName1">Pantalón suelto gris</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price1">20€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName1', 'price1')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/vestido.webp" class="producto2">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName2"> Vestido túnico</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price2">18€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName2', 'price2')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/falda.jpeg" class="producto3">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName3">Falda mid print</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price3">12€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName3', 'price3')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/cardiganLargo.jpeg" class="producto4">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName4">Cardigan Largo Rayas</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price4">22€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName4', 'price4')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;"> 
-                <img src="./imagenes/faldacebra.jpeg" class="producto5">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName5">Falda cebra</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price5">20€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName5', 'price5')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/abriogPiel.jpeg" class="producto6">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName6">Abrigo de piel</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price6">54€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName6', 'price6')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/pantalonAlto.jpeg" class="producto7">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName7">Pantalon alto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price7">26€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName7', 'price7')">Añadir al carrito</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/traje.jpeg" class="producto8">
-                <div class="card-body">
-                    <h5 class="card-title" id="clothesName8">Traje chaqueta</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p class="cardPrice" id="price8">50€</p>
-                        <a class="btn btn-dark" onclick="addToCart('clothesName8', 'price8')">Añadir al carrito</a>
-                </div>
-            </div>
-
+        <!--Aquí el container donde van a ir las cards-->
         </div>
     </div>
 
-
+<!--Creación del modal-->    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark bg-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al carrito</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+<!--Aquí va la lista de elementos añadidos. Empieza vacía-->
+                <ul id="cartList"></ul> 
+            </div>
+            <div class="modal-footer">
+<!--Aquí pongo la suma total de los elementos de la lista actualizada-->
+                <h5 id="sumaCompra" class="text-start $pink"></h5>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+            </div>
+            </div>
+        </div>
+    </div>
     <script src="./reto2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
